@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "579717117232",
+    "project_id": "e-bills-86155",
+    "storage_bucket": "e-bills-86155.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579717117232:android:dde5ca86527b9d1a9244f5",
+        "android_client_info": {
+          "package_name": "com.example.ebills"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579717117232-gr1dcm0bkli9hmnrpt18kn6k1mug3svs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5WtmHWSmcWxIe30GbYqxAoDnfoQoY8Rw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579717117232-gr1dcm0bkli9hmnrpt18kn6k1mug3svs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
