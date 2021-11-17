@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,22 +13,73 @@
     >
 
 
-    <ListView
-        android:id="@+id/lv1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/searchView"
-        android:layout_marginTop="3dp"
-        android:divider="#ad5"
-        android:dividerHeight="2dp">
-
-    </ListView>
-
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:queryHint="Search Here"
+        android:layout_alignParentTop="true"
         android:iconifiedByDefault="false"
-        android:layout_alignParentTop="true" />
+        android:queryHint="Search Here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </SearchView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="623dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="420dp"
+            android:layout_height="319dp"
+            android:layout_marginTop="133dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="228dp"
+                    android:layout_height="193dp"
+                    android:layout_marginBottom="92dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tv"
+                    app:layout_constraintStart_toStartOf="@+id/tv"
+                    tools:srcCompat="@drawable/p" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="157dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="69dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
